@@ -20,6 +20,7 @@ This project is to connect to the WorkoutTrack api up at https://github.com/Qype
 - [Visual Studio](https://visualstudio.microsoft.com/)
 - [Git for Windows](https://gitforwindows.org/)
 - [Node and npm](https://nodejs.org/en)
+- [Bootstrap examples](https://getbootstrap.com/docs/5.3/examples/)
 
 ### Setup
 
