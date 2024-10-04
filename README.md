@@ -2,6 +2,8 @@
 # Workout Tracker - .Net Core client
 
 
+## Project web deployed to http://wt.t21.uk/
+
 ## Project Overview
 This project is to connect to the WorkoutTrack api up at https://github.com/QyperXit/WorkoutTracker-api
 

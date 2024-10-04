@@ -26,8 +26,7 @@
       }
     },
     "IIS": {
-      "commandName": "IIS",
-      "launchBrowser": true
+      "commandName": "IIS"
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",
