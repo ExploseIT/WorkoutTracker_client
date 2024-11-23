@@ -18,6 +18,11 @@ namespace WorkoutTracker_client.Controllers
             return View();
         }
 
+        public IActionResult Main()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

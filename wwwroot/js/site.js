@@ -15,7 +15,7 @@ function api_ret() {
     this.jqXHR = null;
 }
 
-function doApiPost(cb, parms, url) {
+function doApiPost(cb, e, parms, url) {
     console.log("doApiPost", url);
 
     let parmsJson = JSON.stringify(parms);
@@ -24,26 +24,22 @@ function doApiPost(cb, parms, url) {
 
     var ret = new api_ret();
 
-    var request = $.ajax(
+    $.ajax(
         {
             type: "POST",
             data: parmsJson,
             url: _url,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
-        });
-
-    request.done(function (data, textStatus, jqXHR) {
+        }).done(function (data, textStatus, jqXHR) {
         ret.data = data;
         ret.textStatus = textStatus;
         ret.jqXHR = jqXHR;
-        cb(ret);
-    });
-
-    request.fail(function (jqXHR, textStatus) {
+        cb(ret, e);
+    }).fail(function (jqXHR, textStatus) {
         ret.textStatus = textStatus;
         ret.jqXHR = jqXHR;
-        cb(ret);
+        cb(ret, e);
     });
 
 }
